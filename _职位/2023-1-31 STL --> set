@@ -3,8 +3,12 @@
 * advantage : 去重（每种元素在集合中，只能出现一次） ，自动排序
 * eg:
 * unordered_set//无序
+---
+
+
 * leetcode ：  https://leetcode.cn/problems/intersection-of-two-arrays/submissions/
 * answer :
+// 考虑其中的find和insert 的用法
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
@@ -19,4 +23,36 @@ public:
         return vector<int>(result_set.begin(), result_set.end());//返回vector类型
     }
 };
-考虑其中的find和insert 的用法
+---
+
+
+* leetcode :https://leetcode.cn/problems/happy-number/submissions/
+* answer:
+class Solution {
+public:
+//get sum for the num which in
+    int getsum(int n) {
+        int sum = 0;
+        while(n) {
+            sum += (n % 10) * (n % 10);//every number power 2
+            n /= 10;
+        }return sum;
+    }
+    bool isHappy(int n) {
+        unordered_set<int> book;//标记用无序，其中find迅速查找是否循环
+        while(true) {
+            int sum = getsum(n);
+            if(sum == 1) {
+                return true;
+            }
+            //if circle,循环
+            if(book.find(sum) != book.end()) {
+                return false;
+            }else {
+                book.insert(sum);
+            }
+            n = sum;
+        }
+    }
+};
+---
