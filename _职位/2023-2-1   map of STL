@@ -37,3 +37,10 @@ public:
     p1.first;                   // 返回对象p1中名为first的公有数据成员
     p1.second;                 // 返回对象p1中名为second的公有数据成员
 ---
+
+----
+----
+pair创建和初始化等pair<date type1, ...2> name;
+详细链接：https://blog.csdn.net/sevenjoin/article/details/81937695
+----
+----
