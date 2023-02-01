@@ -11,7 +11,8 @@ stack (先进后出，不提供迭代器iterator，栈是以底层容器完成�
        ``empty();//如果栈中无元素，返回true
        ``swap(stack<T> & other_stack);//将当前栈中元素与参数元素对调，但是数据类型要一致
        ``emplace();//用传入的参数调用构造函数，在栈顶生成对象
-
+       
+       经典问题：① 括号匹配：leetcode：（https://leetcode.cn/problems/valid-parentheses/）
 ---
      * Leetcode：https://leetcode.cn/problems/implement-queue-using-stacks/submissions/
      * answer code:
@@ -20,7 +21,7 @@ public:
     stack<int>stin;
     stack<int>stout;
     MyQueue() {
-        //用于对自己的数据进行初始化，自己命名，结构体，相当于，把下面的几个函数封包进去，隐藏实现，初始化。MyQueue que = new MyQueue();//开辟
+        //用于对自己的数据进行初始化，自己命名，结构体，相当于，把下面的几个函数封包进去，隐藏实现，初始化。MyQueue que = new MyQueue();//such as： A *obj = new A();  //使用 new 创建对象
     }
     //将x推到队列末尾
     void push(int x) {
