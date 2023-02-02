@@ -15,7 +15,50 @@ stack (先进后出，不提供迭代器iterator，栈是以底层容器完成�
 ***string类也可自身作为一个栈，有相关操作，如，push.back();//键入末尾一个单字符  pop_back();//删掉最后一个字符，empty();back();......***
        
        经典问题： ① 括号匹配：leetcode：（https://leetcode.cn/problems/valid-parentheses/）
-                  ② 删除字符串相邻重复字符：leetcode：（https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/）
+                  ②逆波兰表达式：leetcode：（https://leetcode.cn/problems/evaluate-reverse-polish-notation/）,其中有些细节，比如string s; s[i]==""(双引号)和''(单引号区别)。细节为：
+             * 单引号用来表示字符字面量，单引号括起来的单个字符代表整数。
+             * 双引号用来表示字符串字面量，双引号括起来的若干个字符代表字符指针
+             **字符串客串详解： http://c.biancheng.net/view/2236.html **
+       
+                  ③删除字符串相邻重复字符：leetcode：（https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/）(解法如下：)
+```c++
+       //one kind
+       class Solution {
+public:
+    string removeDuplicates(string s) {
+        string res;
+        for(char ch : s) {
+            if(res.empty() || res.back() != ch) {
+                res.push_back(ch);
+            }
+            else {
+                res.pop_back();
+            }
+        }
+        return res;
+    }
+};
+       //second kind
+       /*
+stack<char> res;
+for(char s : S) {
+    if(res.empty() || s != res.top()) {
+        res.push(s);
+    }
+    else {
+        res.pop();
+    }
+}
+string ret = "";//赋值为空字符，方便字符串加减法
+while(!res.empty()) {
+    ret += res.top();//&
+    res.pop();//cut
+}
+reverse(ret.begin(), ret.end());//栈出来的字符是反过来的，反转一下
+return ret;
+*/
+```
+       
 ---
 * Leetcode：https://leetcode.cn/problems/implement-queue-using-stacks/submissions/
 * answer code:
