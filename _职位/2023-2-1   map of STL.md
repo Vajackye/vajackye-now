@@ -1,11 +1,13 @@
-**map:map是一种key value的存储结构，可以用key保存数值，用value在保存数值所在的下标。**
+**map:  map是一种key value的存储结构，可以用key保存数值，用value在保存数值所在的下标。**
 * map也有find等东西
 * 定义方式： map<数据类型1(key)，数据类型2(value)> 对象name;
 * 第二种写法：auto i = map[key];//此时传给i的是value，所以，map可以通过key找value，此时key相当于下标了属于是。  <u>未初始化的map[key]++;默认value从0开始？好像还可以自定义，查一下</u>
 
 * map可以用来查找，且存储两种类型，有时和结构体差不多作用.
+* ！！！类似于几数相加，几数之和问题，若是在一个数组内操作，数字大了一般不建议哈希，用双指针，不然会time limited。
 ### std::unordered_map();
-* 具体用法：leetcode：https://leetcode.cn/problems/two-sum/submissions/
+* 具体用法：leetcode(两数之和)：https://leetcode.cn/problems/two-sum/submissions/
+*           leetcode(四数相加)：https://leetcode.cn/problems/4sum-ii/
 * answer code： 
 
 ```c++
@@ -38,7 +40,31 @@ public:
     p1 == p2；                  // 如果两个对象的first和second依次相等，则这两个对象相等；该运算使用元素的==操作符。
     p1.first;                   // 返回对象p1中名为first的公有数据成员
     p1.second;                 // 返回对象p1中名为second的公有数据成员
----
+
 
 * pair创建和初始化等pair<date type1, ...2> name;
 * 详细链接：https://blog.csdn.net/sevenjoin/article/details/81937695
+---
+```c++
+  //四数相加
+  class Solution {
+public:
+    int fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {
+            unordered_map<int, int> book;//key = nums1 + nums2,value = (nums1 + nums2)times
+            for(int a : nums1) {
+                for(int b : nums2) {
+                    book[a + b]++;//未初始化的map[key]++;默认value从0开始?
+                }
+            }
+            int cnt = 0;//有0-n3-n4出现，直接加出现次数，因为没说不可以重复，相当于，m*n型。
+            for(int c : nums3) {
+                for(int d : nums4) {
+                    if(book.find(0 - c - d) != book.end()) {
+                        cnt += book[0 - c - d];
+                    }
+                }
+            }
+            return cnt;
+    }
+};
+```
