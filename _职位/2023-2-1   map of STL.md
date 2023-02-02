@@ -2,11 +2,11 @@
 * map也有find等东西
 * 定义方式： map<数据类型1(key)，数据类型2(value)> 对象name;
 * map可以用来查找，且存储两种类型，有时和结构体差不多作用.
-###std::unordered_map();
-具体用法：leetcode：https://leetcode.cn/problems/two-sum/submissions/
-  answer code： 
----
+### std::unordered_map();
+* 具体用法：leetcode：https://leetcode.cn/problems/two-sum/submissions/
+* answer code： 
 
+```c++
   class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -22,8 +22,7 @@ public:
         return {};//C++ 11 新特性，返回类型和函数类型一致，这里代表返回一个空的vector<int> 对象
     }
 };
-
----
+```
 其中auto的用法，和iter->second的用法，pair用法，和return 用法：
 * 针对数据类型很复杂的，自动转换。
 * iter由初始化时知道，iter此时指向map中某个元素的全部值，也就是此元素位置的key和value值，iter->second指向，value值，iter->first指向，key值。iter++,则指向map下一个元素全部值。
@@ -39,9 +38,5 @@ public:
     p1.second;                 // 返回对象p1中名为second的公有数据成员
 ---
 
-----
-----
-pair创建和初始化等pair<date type1, ...2> name;
-详细链接：https://blog.csdn.net/sevenjoin/article/details/81937695
-----
-----
+* pair创建和初始化等pair<date type1, ...2> name;
+* 详细链接：https://blog.csdn.net/sevenjoin/article/details/81937695
