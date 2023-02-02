@@ -1,8 +1,8 @@
 stack (先进后出，不提供迭代器iterator，栈是以底层容器完成其所有的工作，对外提供统一的接口，底层容器是可插拔的（也就是说我们可以控制使用哪种容器来实现栈的功能),
        栈的底层实现可以是vector，deque，list 都是可以的， 主要就是数组和链表的底层实现)
-       * deque容器，详解：http://c.biancheng.net/view/6860.html
-       * but ,you also can use the vector to as the container, the way is "std::stack<int, std::vector<int>> ???(variable name)" 
-       * stack相关操作：
+* deque容器，详解：http://c.biancheng.net/view/6860.html
+* but ,you also can use the vector to as the container, the way is "std::stack<int, std::vector<int>> ???(variable name)" 
+* stack相关操作：
        
        ``top();//返回一个栈顶元素的引用，但是不删除栈顶元素
        ``push();//插入栈顶一个元素
@@ -14,10 +14,12 @@ stack (先进后出，不提供迭代器iterator，栈是以底层容器完成�
        
 ***string类也可自身作为一个栈，有相关操作，如，push.back();//键入末尾一个单字符  pop_back();//删掉最后一个字符，empty();back();......***
        
-       经典问题：① 括号匹配：leetcode：（https://leetcode.cn/problems/valid-parentheses/）
+       经典问题： ① 括号匹配：leetcode：（https://leetcode.cn/problems/valid-parentheses/）
+                  ② 删除字符串相邻重复字符：leetcode：（https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/）
 ---
-     * Leetcode：https://leetcode.cn/problems/implement-queue-using-stacks/submissions/
-     * answer code:
+* Leetcode：https://leetcode.cn/problems/implement-queue-using-stacks/submissions/
+* answer code:
+```c++
        class MyQueue {
 public:
     stack<int>stin;
@@ -63,7 +65,8 @@ public:
  * int param_3 = obj->peek();
  * bool param_4 = obj->empty();
  */
- ---
+```
+---
  
  
 queue（先进先出，不提供迭代器iterator,与栈大同小异）
@@ -77,8 +80,9 @@ queue（先进先出，不提供迭代器iterator,与栈大同小异）
 
 
 ---
-       * leetcode：https://leetcode.cn/problems/implement-stack-using-queues/submissions/
-       * answer code：
+* leetcode：https://leetcode.cn/problems/implement-stack-using-queues/submissions/
+* answer code：
+```c++
        class MyStack {
 public:
     //only use one queue can finish all thing, but you also can use two queue, the second queue will be used to copy the queue1 except the final element.
@@ -120,5 +124,5 @@ public:
  * int param_3 = obj->top();
  * bool param_4 = obj->empty();
  */
- 
- ---
+``` 
+---
