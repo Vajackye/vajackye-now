@@ -4,13 +4,13 @@ stack (先进后出，不提供迭代器iterator，栈是以底层容器完成�
 * but ,you also can use the vector to as the container, the way is "std::stack<int, std::vector<int>> ???(variable name)" 
 * stack相关操作：
        
-       ``top();//返回一个栈顶元素的引用，但是不删除栈顶元素
-       ``push();//插入栈顶一个元素
-       ``pop();//移除栈顶一个元素
-       ``size();//返回栈中元素个数
-       ``empty();//如果栈中无元素，返回true
-       ``swap(stack<T> & other_stack);//将当前栈中元素与参数元素对调，但是数据类型要一致
-       ``emplace();//用传入的参数调用构造函数，在栈顶生成对象
+       top();//返回一个栈顶元素的引用，但是不删除栈顶元素
+       push();//插入栈顶一个元素
+       pop();//移除栈顶一个元素
+       size();//返回栈中元素个数
+       empty();//如果栈中无元素，返回true
+       swap(stack<T> & other_stack);//将当前栈中元素与参数元素对调，但是数据类型要一致
+       emplace();//用传入的参数调用构造函数，在栈顶生成对象
        
 ***string类也可自身作为一个栈，有相关操作，如，push.back();//键入末尾一个单字符  pop_back();//删掉最后一个字符，empty();back();......***
        
@@ -71,12 +71,12 @@ public:
  
 queue（先进先出，不提供迭代器iterator,与栈大同小异）
        
-      `` q.empty();//如果队列为空返回true，否则返回false
-      `` q.size();//返回队列中元素的个数
-      `` q.pop();//删除队列首元素但不返回其值
-      `` q.front();//返回队首元素的值，但不删除该元素
-      `` q.push();//在队尾压入新元素
-      `` q.back();//返回队列尾元素的值，但不删除该元素
+      q.empty();//如果队列为空返回true，否则返回false
+      q.size();//返回队列中元素的个数
+      q.pop();//删除队列首元素但不返回其值
+      q.front();//返回队首元素的值，但不删除该元素
+      q.push();//在队尾压入新元素
+      q.back();//返回队列尾元素的值，但不删除该元素
 
 
 ---
