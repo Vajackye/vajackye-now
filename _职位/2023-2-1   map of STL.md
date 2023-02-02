@@ -1,7 +1,8 @@
-** map:map是一种key value的存储结构，可以用key保存数值，用value在保存数值所在的下标。
+**map:map是一种key value的存储结构，可以用key保存数值，用value在保存数值所在的下标。**
 * map也有find等东西
 * 定义方式： map<数据类型1(key)，数据类型2(value)> 对象name;
-* map可以用来查找，且存储两种类型，有时和结构体差不多作用。
+* map可以用来查找，且存储两种类型，有时和结构体差不多作用.
+###std::unordered_map();
 具体用法：leetcode：https://leetcode.cn/problems/two-sum/submissions/
   answer code： 
 ---
