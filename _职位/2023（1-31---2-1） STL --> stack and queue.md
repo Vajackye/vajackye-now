@@ -15,7 +15,7 @@ stack (先进后出，不提供迭代器iterator，栈是以底层容器完成�
 ***string类也可自身作为一个栈，有相关操作，如，push.back();//键入末尾一个单字符  pop_back();//删掉最后一个字符，empty();back();......***
        
        经典问题： ① 括号匹配：leetcode：（https://leetcode.cn/problems/valid-parentheses/）
-                  ②逆波兰表达式：leetcode：（https://leetcode.cn/problems/evaluate-reverse-polish-notation/）,其中有些细节，比如string s; s[i]==""(双引号)和''(单引号区别)。细节为：
+                  ②逆波兰表达式：leetcode：（https://leetcode.cn/problems/evaluate-reverse-polish-notation/）,其中有些细节，比如stoll()把字符串转换成long long int 型；string s; s[i]==""(双引号)和''(单引号区别)。细节为：
              * 单引号用来表示字符字面量，单引号括起来的单个字符代表整数。
              * 双引号用来表示字符串字面量，双引号括起来的若干个字符代表字符指针
              **字符串客串详解： http://c.biancheng.net/view/2236.html **
