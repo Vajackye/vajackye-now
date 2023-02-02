@@ -1,7 +1,7 @@
 **map:  map是一种key value的存储结构，可以用key保存数值，用value在保存数值所在的下标。**
 * map也有find等东西
 * 定义方式： map<数据类型1(key)，数据类型2(value)> 对象name;
-* 第二种写法：auto i = map[key];//此时传给i的是value，所以，map可以通过key找value，此时key相当于下标了属于是。  <u>未初始化的map[key]++;默认value从0开始？好像还可以自定义，查一下</u>
+* 第二种写法：auto i = map[key];//此时传给i的是value，所以，map可以通过key找value，此时key相当于下标了属于是。  <u>未初始化的map[key]++;默认value从0开始？好像还可以自定义，查一下</u>，在devc++运行了，可行。是0.
 
 * map可以用来查找，且存储两种类型，有时和结构体差不多作用.
 * ！！！类似于几数相加，几数之和问题，若是在一个数组内操作，数字大了一般不建议哈希，用双指针，不然会time limited。
