@@ -11,6 +11,7 @@ stack (先进后出，不提供迭代器iterator，栈是以底层容器完成�
        empty();//如果栈中无元素，返回true
        swap(stack<T> & other_stack);//将当前栈中元素与参数元素对调，但是数据类型要一致
        emplace();//用传入的参数调用构造函数，在栈顶生成对象
+       清空栈：①pop一直循环。②定义一个临时栈such as：stack<int>().swap(s);//s为你要清空的栈，通过swap与空栈交换位置.
        
 ***string类也可自身作为一个栈，有相关操作，如，push.back();//键入末尾一个单字符  pop_back();//删掉最后一个字符，empty();back();......***
        
