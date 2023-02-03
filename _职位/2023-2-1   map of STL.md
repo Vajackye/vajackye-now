@@ -5,7 +5,7 @@
 
 * map可以用来查找，且存储两种类型，有时和结构体差不多作用.
 * ！！！类似于几数相加，几数之和问题，若是在一个数组内操作，数字大了一般不建议哈希，用双指针，不然会time limited。
-### std::unordered_map();
+### std::unordered_map();（底层实现：哈希表）
 * 具体用法：leetcode(两数之和)：https://leetcode.cn/problems/two-sum/submissions/
 *           leetcode(四数相加)：https://leetcode.cn/problems/4sum-ii/
 * answer code： 
@@ -68,3 +68,5 @@ public:
     }
 };
 ```
+### map();(底层实现：平衡二叉树)
+### multimap();(底层实现：平衡二叉树)
