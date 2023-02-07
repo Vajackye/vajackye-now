@@ -1,5 +1,10 @@
-### 一维等操作略。
+### 一维:
+```c++
+	vector<int> que;
+	que.insert(position, value)；
+```
 ---
+
 ### 二维：
 遍历方式：
 ```c++
@@ -12,4 +17,11 @@ vector<vector<int>> res;
 	     }
 	     res.push_back(tmp);
 	 }
+```
+---
+### 链表：
+```c++
+	//插入效率比vector高，因为vector插入时，效率大于等于n^2，先开辟新扩容数组，在插入copy到新数组。
+	list<int> que;
+	que.insert(position, value);
 ```
