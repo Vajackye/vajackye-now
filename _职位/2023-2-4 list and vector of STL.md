@@ -1,6 +1,6 @@
 ### 一维:
 ```c++
-	vector<int> que;
+	vector<int> que;//int初始化默认为0，string初始化默认为空字符串
 	que.insert(position, value)；
 	
 ```
