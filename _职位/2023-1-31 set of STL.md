@@ -6,6 +6,11 @@
 #### multiset(有序可重)；（底层实现：平衡二叉树）
 #### unordered_set(无序)；（底层实现：哈希表）
 
+```c++
+    set<int> ss;
+    ss.begin()//是一个指针，返回值的话，要*ss.begin();
+    ss.erase()//擦除第一个元素。
+```
 * (无序部分：)
 * leetcode ：  https://leetcode.cn/problems/intersection-of-two-arrays/submissions/
 * answer :
