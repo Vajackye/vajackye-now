@@ -10,6 +10,7 @@
     set<int> ss;
     ss.begin()//是一个指针，返回值的话，要*ss.begin();
     ss.erase()//擦除第一个元素。
+    ss.rbegin()//返回最后一个元素（可以认为：reversebegin？？）
 ```
 * (无序部分：)
 * leetcode ：  https://leetcode.cn/problems/intersection-of-two-arrays/submissions/
