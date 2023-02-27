@@ -4,3 +4,5 @@
 
 * import zipfile<用于解压zip>：unzip_data
 * import torch(txt解压？)：https://blog.csdn.net/bqw18744018044/article/details/109150919
+
+* keyboardinterrupt: python键盘报错，即误按键盘导致程序中断，再次运行即可
