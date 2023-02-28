@@ -2,6 +2,8 @@
 
 * 输入输出：测试数据一般都是多组，如果惟有告诉数据数量，就要while(scanf("%d", &a) != EOF)  输入的数据实际上就是文件。EOP->end of file； 或者：while(cin>>a>>b)//==0停止
 (其实：多组测试数据封在一个文件夹里测试)
+![34701287dc6d9a6eb1195e7dbb6800a](https://user-images.githubusercontent.com/121871885/221875566-00712b78-cf48-4d60-b0b0-4a473e390499.jpg)
+
 
 
 
