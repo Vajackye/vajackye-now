@@ -70,3 +70,7 @@ public:
 ```
 ### map();(底层实现：平衡二叉树)
 ### multimap();(底层实现：平衡二叉树)
+
+  
+### map使用错误：
+  * auto iter = mymap.find(key); 其中iter是查找到位置的迭代器（**本质是指针csdn查到**），指向第一个数，无iter->first操作？（leetcode 试了，compile error，但是csdn查到：有first操作，返回的就是第一个值） 有iter->second操作
