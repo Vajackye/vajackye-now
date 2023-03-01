@@ -4,7 +4,7 @@
 (其实：多组测试数据封在一个文件夹里测试)
 ![34701287dc6d9a6eb1195e7dbb6800a](https://user-images.githubusercontent.com/121871885/221875566-00712b78-cf48-4d60-b0b0-4a473e390499.jpg)
 
-
+* cin.getline(变量名，读取最长长度);//读取一行，避免scanf的'%s'和cin不读取空格
 
 
 ### 编译报错：
