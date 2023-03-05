@@ -172,3 +172,34 @@ public:
  */
 ``` 
 ---
+
+### 优先队列(`priority_queue`):
+* https://blog.csdn.net/xingzi201/article/details/119884227
+* https://blog.csdn.net/c20182030/article/details/70757660?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162977367316780274196594%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162977367316780274196594&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-8-70757660.first_rank_v2_pc_rank_v29&utm_term=%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97&spm=1018.2226.3001.4187
+
+* 底层实现是堆，大顶堆小顶堆，一开始默认是大顶堆，如果没有自己设置比较方式：
+```c++
+#include<iostream>
+#include<queue>
+#include<functional>//用于比较操作符       
+using namespace std;
+
+int main()  {
+    srand(time(NULL));//随机数生成
+    priority_queue<int> pq1;
+    priority_queue<int, vector<int>, greater<>() > pq2;//大顶堆，后面两个可省略，默认为大顶堆，实现容器为vector   
+    priority_queue<int, vector<int>, less<>() > pq3;//小顶堆，后面两个加上。
+    //less是从大到小，greater是从小到大。从根开始算（数组头）
+    //默认会排序，基本用法：
+    for(int i = 0; i < 10; i++) {
+        int i = rand()%100; //随机数
+        pq1.push(i);
+        cout<<pq1.top();  //与普通队列不同，front(),back() ，优先队列的top为顶部（前为出口）                               
+    }
+    for(int i = 0; i < pq1.size(); i++) {
+       int out = pq1.top();
+       cout<<out;
+       pq1.pop();
+       }
+    return 0;
+}       
