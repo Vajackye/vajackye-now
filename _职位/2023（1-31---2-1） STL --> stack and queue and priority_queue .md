@@ -177,7 +177,9 @@ public:
 * https://blog.csdn.net/xingzi201/article/details/119884227
 * https://blog.csdn.net/c20182030/article/details/70757660?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162977367316780274196594%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162977367316780274196594&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-8-70757660.first_rank_v2_pc_rank_v29&utm_term=%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97&spm=1018.2226.3001.4187
 
-* 底层实现是堆，大顶堆小顶堆，一开始默认是大顶堆，如果没有自己设置比较方式：
+* 底层实现是堆，大顶堆小顶堆，一开始默认是大顶堆，如果没有自己设置比较方式;
+* 自定义数据类型，需要自己编写排序函数cmp；
+       
 ```c++
 #include<iostream>
 #include<queue>
@@ -202,4 +204,7 @@ int main()  {
        pq1.pop();
        }
     return 0;
+       //pq1.emplace();原地构造一个元素并插入队列
+       //pq1.empty();
+       //swap();交换队列元素
 }       
