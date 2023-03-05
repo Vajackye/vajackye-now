@@ -68,6 +68,36 @@ public:
     }
 };
 ```
+* erase函数的使用：
+ ```c++
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+  map<int,User> record;
+  map<int,User>::iterator it;
+  it=record.begin();
+  while(it!=record.end()){
+	  int flag=-1;
+	  for(int i=0;i<k;i++){
+			  flag=0;						
+	  }
+	  if(flag){
+		  record.erase(it++);
+                          
+     /*record.erase(it++);
+      1.先把it赋值给一个临时变量作传给erase参数变量；
+      2.接下来执行了it++操作，也就是it现在已经指向了下一个地址；
+      3.再调用erase函数，释放掉第一步中保存的要删除的it的值的临时变量所指的位置。
+      如果只是record.erase(it);执行后it变为一个非法指针
+      原因是map 是关联容器，对于关联容器来说，如果某一个元素已经被删除，那么其对应的迭代器就失效了，不应该再被使用；否则会导致程序无定义的行为
+*/                   
+	  }else{
+	  	it++;
+	  }
+  }
+}                          
+```
+                        
 ### map();(底层实现：平衡二叉树)
 ### multimap();(底层实现：平衡二叉树)
 
