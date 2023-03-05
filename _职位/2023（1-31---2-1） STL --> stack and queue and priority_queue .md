@@ -208,3 +208,5 @@ int main()  {
        //pq1.empty();
        //swap();交换队列元素
 }       
+```
+* 附录：关于rand：https://support.microsoft.com/zh-cn/office/rand-%E5%87%BD%E6%95%B0-4cbfa695-8869-4788-8d90-021ea9f5be73       
