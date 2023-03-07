@@ -5,6 +5,9 @@
 ![34701287dc6d9a6eb1195e7dbb6800a](https://user-images.githubusercontent.com/121871885/221875566-00712b78-cf48-4d60-b0b0-4a473e390499.jpg)
 
 * cin.getline(变量名，读取最长长度);//读取一行，避免scanf的'%s'和cin不读取空格
+* getline(cin, string name);//格式，其中getline在string头文件中
+* getline参考网址：http://c.biancheng.net/view/1345.html
+* 对于字符数组char c[];容量一般要加1（题目所给字符长度+1），因为要'\0'终止字符串，'\0'占一个字符。
 * 输入多组文件时，每次测试完一组，要重新初始化某些**含有计算过的值**的变量
 
 ### 编译报错：
