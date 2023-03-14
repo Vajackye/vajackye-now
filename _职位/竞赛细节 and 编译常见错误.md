@@ -8,7 +8,7 @@
 * getline(cin, string name);//格式，其中getline在string头文件中
 * getline参考网址：http://c.biancheng.net/view/1345.html
 * 对于字符数组char c[];容量一般要加1（题目所给字符长度+1），因为要'\0'终止字符串，'\0'占一个字符。
-* 输入多组文件时，每次测试完一组，要重新初始化某些**含有计算过的值**的变量
+* 输入多组文件时，每次测试完一组，要重新初始化某些**含有计算过的值**的变量（所以，关键变量都要放在测试数据内）
 
 ### 编译报错：
 * ![01344c63506bc223cbff271bcf1ef43](https://user-images.githubusercontent.com/121871885/221873206-5eb80396-3474-4b0a-8a91-223b39ad7656.jpg)
