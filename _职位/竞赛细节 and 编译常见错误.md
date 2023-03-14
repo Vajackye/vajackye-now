@@ -13,6 +13,7 @@
 ### 编译报错：
 * ![01344c63506bc223cbff271bcf1ef43](https://user-images.githubusercontent.com/121871885/221873206-5eb80396-3474-4b0a-8a91-223b39ad7656.jpg)
 * expected member name or ';' after declaration specifiers:情况1：定义多维数组同时初始化，里面的值之间用","隔开，不是";"，只有初始化完成，才有;
+* 检查输出数据格式：用鼠标拖一下，就知道（鼠标拖蓝）
 
 #### runtime error:
 * 除0现象，答案趋向无穷
