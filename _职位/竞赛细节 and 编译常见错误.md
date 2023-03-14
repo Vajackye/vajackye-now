@@ -14,6 +14,12 @@
 * ![01344c63506bc223cbff271bcf1ef43](https://user-images.githubusercontent.com/121871885/221873206-5eb80396-3474-4b0a-8a91-223b39ad7656.jpg)
 * expected member name or ';' after declaration specifiers:情况1：定义多维数组同时初始化，里面的值之间用","隔开，不是";"，只有初始化完成，才有;
 
+#### runtime error:
+* 除0现象，答案趋向无穷
+* 数组越界
+* 指针越界
+* 使用已释放的空间
+* 数组开太大，栈溢出，（所以放到函数外，放进堆）
 
 ### 文件测试数据：
 * 用记事本记录测试数据， 文件名类型：*_*（非txt）。
