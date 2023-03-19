@@ -1,3 +1,6 @@
+## matplotlib
+* 可绘制散点图，折线图，曲线图，直方图，饼图
+
 ```python
   #导入绘图模块
   import matplotlib.pyplot as plt
