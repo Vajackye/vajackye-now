@@ -10,11 +10,9 @@
   import random
   random.uniform(x, y)
   '''
+```
 ### 图表绘制
 
-```python
-  
-```
 ```python
 
 import matplotlib.pyplot as plt
