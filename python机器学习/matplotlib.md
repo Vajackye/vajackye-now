@@ -36,6 +36,7 @@ x_ticks_label = ["11点{}分".format(i) for i in x]#所有时刻
 
 y_ticks = range(40)
 
+#plt.x/yticks()表示修改刻度
 #plt.xticks(x_ticks_label[::5])不可直接使用，因为是字符串（见上x_ticks_label变量），要先转成整数
 plt.xticks(x[::5], x_ticks_label[::5])#x轴刻度，内部是刻度范围，5为一个范围，后面的是在原所有时刻以5一个分度显示
 
