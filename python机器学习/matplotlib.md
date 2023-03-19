@@ -18,8 +18,8 @@
 import matplotlib.pyplot as plt
 import random
 from pylab import mpl
-#mpl.rcParams["font.sans-serif"] = ["SimHei"]
-#mpl.rcParams["axes.unicode_minus"] = False
+mpl.rcParams["font.sans-serif"] = ["SimHei"]#设置显示中文字体
+mpl.rcParams["axes.unicode_minus"] = False#设置显示正常符号
 
 x = range(70)
 
