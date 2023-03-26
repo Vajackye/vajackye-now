@@ -191,7 +191,7 @@ int main()  {
     priority_queue<int> pq1;
     priority_queue<int, vector<int>, greater<> > pq2;//大顶堆，后面两个可省略，默认为大顶堆，实现容器为vector   
     priority_queue<int, vector<int>, less<> > pq3;//小顶堆，后面两个加上。
-    //less是从大到小，greater是从小到大。从根开始算（数组头）
+    //less是从小到大（左边往右遍历），greater是从大到小（左边往右遍历）。从根开始算（数组头）
     //默认会排序，基本用法：
     for(int i = 0; i < 10; i++) {
         int i = rand()%100; //随机数
