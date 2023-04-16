@@ -189,8 +189,8 @@ using namespace std;
 int main()  {
     srand(time(NULL));//随机数生成
     priority_queue<int> pq1;
-    priority_queue<int, vector<int>, greater<> > pq2;//大顶堆，后面两个可省略，默认为大顶堆，实现容器为vector   
-    priority_queue<int, vector<int>, less<> > pq3;//小顶堆，后面两个加上。
+    priority_queue<int, vector<int>, greater<> > pq2;//大顶堆（每次都删小的）。
+    priority_queue<int, vector<int>, less<> > pq3;//小顶堆（每次都删大的），后面两个加上。后面两个可省略，默认为大顶堆，实现容器为vector   
     //less是从大到小（左边往右遍历），greater是从小到大（左边往右遍历）。从根开始算（数组头）
        such as： 1 2 3 4 5 6 7 8 9 -》less：top（）= 10 9 8 7 6 5 4 3 2 1 ；greater:top（）= 1 2 3 4 5 6 7 8 9;(pop按照这个顺序pop)，堆头应该在（若顺序表）数组头，top等操作在数组尾。
     //默认会排序，基本用法：
