@@ -211,3 +211,21 @@ int main()  {
 }       
 ```
 * 附录：关于rand：https://support.microsoft.com/zh-cn/office/rand-%E5%87%BD%E6%95%B0-4cbfa695-8869-4788-8d90-021ea9f5be73       
+
+----
+       
+#### 双端队列`deque`       
+       
+相关操作：
+```
+push_back()   //：在队列尾部添加元素，无返回值
+push_front()  //：在队列头部添加元素，无返回值
+pop_back()    //：删除队列尾部的元素，无返回值
+pop_back()    //：删除队列尾部的元素，无返回值
+front()       //：获得队列头部元素
+back()        //： 获得队列尾部元素
+size()        //：获得队列大小
+empty()       //：判断队列是否为空
+       
+```
+* 更多操作：https://www.cnblogs.com/linuxAndMcu/p/10260124.html
