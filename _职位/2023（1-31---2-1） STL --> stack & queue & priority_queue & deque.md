@@ -216,7 +216,7 @@ int main()  {
        
 #### 双端队列`deque`       
        
-相关操作：
+相关操作：`#include<deque>`
 ```c++
 push_back()   //：在队列尾部添加元素，无返回值
 push_front()  //：在队列头部添加元素，无返回值
