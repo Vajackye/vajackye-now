@@ -229,3 +229,9 @@ empty()       //：判断队列是否为空
        
 ```
 * 更多操作：https://www.cnblogs.com/linuxAndMcu/p/10260124.html
+
+
+-----------
+## 进阶玩法
+* 单调栈
+* 单调队列
